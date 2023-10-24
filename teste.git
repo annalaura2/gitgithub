@@ -1,0 +1,42 @@
+annalaura2304@localhost:~/repo-local$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /home/annalaura2304/repo-local/.git/
+annalaura2304@localhost:~/repo-local$ cd .git
+annalaura2304@localhost:~/repo-local/.git$ ls
+branches  config  description  HEAD  hooks  info  objects  refs
+annalaura2304@localhost:~/repo-local/.git$ cat config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+annalaura2304@localhost:~/repo-local/.git$ git clone repo-local
+fatal: repository 'repo-local' does not exist
+annalaura2304@localhost:~/repo-local/.git$ git clone ^[[200~https://github.com/annalaura2/logica-de-programacao-em-c.git~
+Cloning into 'logica-de-programacao-em-c.git~'...
+fatal: protocol '?[200~https' is not supported
+annalaura2304@localhost:~/repo-local/.git$ git clone https://github.com/annalaura2/gitgithub.git
+Cloning into 'gitgithub'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+annalaura2304@localhost:~/repo-local/.git$ git clone https://github.com/annalaura2/gitgithub.git repo-clonado
+Cloning into 'repo-clonado'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+annalaura2304@localhost:~/repo-local/.git$ ^C
+annalaura2304@localhost:~/repo-local/.git$ 
+
+
